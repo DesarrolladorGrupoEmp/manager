@@ -115,7 +115,7 @@
 
 		public function getContratoId($pkID){			
 
-			$this->q_general = "SELECT *,c.nombre AS ciudad_cedula,tipo_contrato.nombre AS tipo_contrato,hoja_vida.direccion AS dir_empleado,DAY(fechaIni) AS dia,MONTH(fechaIni) AS mes,YEAR(fechaIni) AS anio,DAY(fechaFin) AS dia_fin,MONTH(fechaFin) AS mes_fin,YEAR(fechaIni) AS anio_fin, contratos.pkID AS pkID,CONCAT(hoja_vida.nombre,' ',hoja_vida.apellido) AS empleado,empresa.nombre AS empleador,cargo.nombre AS cargo,ciudad.nombre AS ciudad,tipo_contrato.nombre AS tipoContrato FROM contratos
+			$this->q_general = "SELECT *,c.nombre AS ciudad_cedula,tipo_contrato.nombre AS tipo_contrato,hoja_vida.direccion AS dir_empleado,DAY(fechaIni) AS dia,MONTH(fechaIni) AS mes,YEAR(fechaIni) AS anio,DAY(fechaFin) AS dia_fin,MONTH(fechaFin) AS mes_fin,YEAR(fechaFin) AS anio_fin, contratos.pkID AS pkID,CONCAT(hoja_vida.nombre,' ',hoja_vida.apellido) AS empleado,empresa.nombre AS empleador,cargo.nombre AS cargo,ciudad.nombre AS ciudad,tipo_contrato.nombre AS tipoContrato FROM contratos
 								INNER JOIN hoja_vida ON hoja_vida.pkID = contratos.fkID_empleado
 								INNER JOIN empresa ON empresa.pkID = contratos.fkID_empleador
 								INNER JOIN cargo ON cargo.pkID = contratos.fkID_cargo

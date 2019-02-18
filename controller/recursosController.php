@@ -18,7 +18,7 @@
 		//-------------------------------------
 
 		function __construct(){
-			$this->id_modulo = 39;
+			$this->id_modulo = 28;
 			$this->arr_reporte = array();
 		}
 
@@ -894,7 +894,8 @@
 		               <td></td>		               		               	
 		           </tr>
 		           <div class='alert alert-danger' role='alert'>		           		
-		           		En este momento no tiene permiso de <strong>Consulta</strong> para <strong>Procesos.</strong>		           				           	
+		           		En este momento no tiene permiso de <strong>Consulta</strong> para <strong>
+		           		".$this->id_modulo." Recursos.</strong>		           				           	
 				   </div>";
             }else{
 
