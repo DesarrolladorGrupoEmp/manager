@@ -890,7 +890,7 @@ class recursosController extends recursos
                 echo '<td>
                      		<a id="btn_doc" title="Descargar PDF" name="download_documento" type="button" class="btn btn-success" href = "subidas/' . $ruta_pdf . '" target="_blank" ><span class="glyphicon glyphicon-file"></span></a>
 
-                  			<a id="btn_doc" title="Descargar WORD" name="download_documento" type="button" class="btn btn-success" href = "subidas/' . $ruta_word . '" target="_blank" ><span class="glyphicon glyphicon-save-file"></span></a>
+                  			<a id="btn_doc" title="Descargar WORD" name="download_documento" type="button" class="btn btn-primary" href = "subidas/' . $ruta_word . '" target="_blank" ><span class="glyphicon glyphicon-save-file"></span></a>
 
                    			<button id="btn_editar" title="Editar" name="edita_proceso" type="button" class="btn btn-warning" data-toggle="modal" data-target="#form_modal_recursos" data-id-contrato = "' . $id . '" ';if ($edita != 1) {echo 'disabled="disabled"';}echo '><span class="glyphicon glyphicon-pencil"></span></button>
 
@@ -974,7 +974,7 @@ class recursosController extends recursos
                 echo '<td>
                      		<a id="btn_doc" title="Descargar PDF" name="download_documento" type="button" class="btn btn-success" href = "subidas/' . $ruta_pdf . '" target="_blank" ><span class="glyphicon glyphicon-file"></span></a>
 
-                  			<a id="btn_doc" title="Descargar WORD" name="download_documento" type="button" class="btn btn-success" href = "subidas/' . $ruta_word . '" target="_blank" ><span class="glyphicon glyphicon-save-file"></span></a>
+                  			<a id="btn_doc" title="Descargar WORD" name="download_documento" type="button" class="btn btn-primary" href = "subidas/' . $ruta_word . '" target="_blank" ><span class="glyphicon glyphicon-save-file"></span></a>
 
                    			<button id="btn_editar" title="Editar" name="edita_proceso" type="button" class="btn btn-warning" data-toggle="modal" data-target="#form_modal_recursos" data-id-contrato = "' . $id . '" ';if ($edita != 1) {echo 'disabled="disabled"';}echo '><span class="glyphicon glyphicon-pencil"></span></button>
 

@@ -590,6 +590,7 @@ $(function() {
                 //---------------------
                 console.log(data);
                 id_contrato = $("#pkID").val();
+                subida_archivo2(id_contrato);
                 alert(data.mensaje.mensaje);
                 location.reload();
             }).fail(function() {
