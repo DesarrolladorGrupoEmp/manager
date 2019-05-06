@@ -22,13 +22,13 @@
     }
     //---------------------------------------------------------------------------------------------------
     self.cons_fecha_aprobacion_empresa = function() {
-        var consulta_fecha = "select DISTINCT gasto_gral.fecha_aprobacion FROM gasto_gral WHERE fkID_empresa = " + id_empresa + " AND gasto_gral.fecha_aprobacion IS NOT NULL AND gasto_gral.fecha_aprobacion <> '0000-00-00' ORDER BY fecha_aprobacion DESC LIMIT 10";
+        var consulta_fecha = "select DISTINCT gasto_gral.fecha_aprobacion FROM gasto_gral WHERE fkID_empresa = " + id_empresa + " AND gasto_gral.fecha_aprobacion IS NOT NULL AND gasto_gral.fecha_aprobacion <> '0000-00-00' ORDER BY fecha_aprobacion DESC LIMIT 20";
         return $.ajax({
             url: '../controller/ajaxController12.php',
             data: "query=" + consulta_fecha + "&tipo=consulta_gen",
         }).done(function(data) {
             //------------------------------------------
-            //this.paso_reciente = data.mensaje[0].idPaso2;		        
+            //this.paso_reciente = data.mensaje[0].idPaso2;             
         }).fail(function() {
             console.log("error");
             //quita todo? o pone todo?
@@ -39,13 +39,13 @@
         /*---------------------------------------------------*/
     }
     self.cons_fecha_aprobacion_funtecso = function() {
-        var consulta_fecha = "select DISTINCT gasto_gral.fecha_aprobacion FROM gasto_gral WHERE fkID_empresa = 2 AND gasto_gral.fecha_aprobacion IS NOT NULL AND gasto_gral.fecha_aprobacion <> '0000-00-00' ORDER BY fecha_aprobacion DESC LIMIT 10";
+        var consulta_fecha = "select DISTINCT gasto_gral.fecha_aprobacion FROM gasto_gral WHERE fkID_empresa = 2 AND gasto_gral.fecha_aprobacion IS NOT NULL AND gasto_gral.fecha_aprobacion <> '0000-00-00' ORDER BY fecha_aprobacion DESC LIMIT 30";
         return $.ajax({
             url: '../controller/ajaxController12.php',
             data: "query=" + consulta_fecha + "&tipo=consulta_gen",
         }).done(function(data) {
             //------------------------------------------
-            //this.paso_reciente = data.mensaje[0].idPaso2;		        
+            //this.paso_reciente = data.mensaje[0].idPaso2;             
         }).fail(function() {
             console.log("error");
             //quita todo? o pone todo?
@@ -62,7 +62,7 @@
             data: "query=" + consulta_fecha + "&tipo=consulta_gen",
         }).done(function(data) {
             //------------------------------------------
-            //this.paso_reciente = data.mensaje[0].idPaso2;		        
+            //this.paso_reciente = data.mensaje[0].idPaso2;             
         }).fail(function() {
             console.log("error");
             //quita todo? o pone todo?
